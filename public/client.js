@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             li.textContent = `${note.title}: ${note.content}`;
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete';
+            deleteButton.style.background ="red";
             deleteButton.addEventListener('click', () => deleteNote(note._id));
             li.appendChild(deleteButton);
             notesList.appendChild(li);
